@@ -1,3 +1,3 @@
 class PortfolioSerializer < ActiveModel::Serializer
-  attributes :id, :shares, :equity, :average_const, :todays_return, :total_return
+  attributes :id, :shares, :equity, :average_cost, :todays_return, :total_return
 end

@@ -1,35 +1,44 @@
 <mxfile host="65bd71144e">
     <diagram id="f2cukyYO-JzvIAt_M2yg" name="Page-1">
-        <mxGraphModel dx="1125" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="597" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="4" value="&lt;ul&gt;&lt;li&gt;firstname&lt;/li&gt;&lt;li&gt;lastname&lt;/li&gt;&lt;li&gt;username&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;password&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" vertex="1" parent="1">
+                <mxCell id="4" value="&lt;ul&gt;&lt;li&gt;firstname&lt;/li&gt;&lt;li&gt;lastname&lt;/li&gt;&lt;li&gt;username&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;password&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="10" y="160" width="190" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="User" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                <mxCell id="5" value="User" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="10" y="160" width="190" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="&lt;ul&gt;&lt;li&gt;has_one :portfolio&lt;/li&gt;&lt;li&gt;has_many :stocks, through: porfolio&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                <mxCell id="6" value="&lt;ul&gt;&lt;li&gt;has_one :portfolio&lt;/li&gt;&lt;li&gt;has_many :stocks, through: porfolio&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="10" y="70" width="190" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;shares&lt;/li&gt;&lt;li&gt;equity (value of shares)&lt;/li&gt;&lt;li&gt;Average Cost&lt;/li&gt;&lt;li&gt;Portfolio Diversity&lt;/li&gt;&lt;li&gt;Today's Return&lt;/li&gt;&lt;li&gt;Total Return&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" vertex="1" parent="1">
+                <mxCell id="7" value="&lt;div&gt;&lt;ul&gt;&lt;li&gt;shares&lt;/li&gt;&lt;li&gt;equity (value of shares)&lt;/li&gt;&lt;li&gt;Average Cost&lt;/li&gt;&lt;li&gt;Portfolio Diversity&lt;/li&gt;&lt;li&gt;Today's Return&lt;/li&gt;&lt;li&gt;Total Return&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="260" y="160" width="190" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Portfolio" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                <mxCell id="8" value="Portfolio" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="260" y="160" width="190" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="&lt;ul&gt;&lt;li&gt;price&lt;/li&gt;&lt;li&gt;volume&lt;/li&gt;&lt;li&gt;change&lt;/li&gt;&lt;li&gt;today's open&lt;/li&gt;&lt;li&gt;previous close&lt;/li&gt;&lt;li&gt;intraday high&lt;/li&gt;&lt;li&gt;intraday low&lt;/li&gt;&lt;li&gt;52 week high&lt;/li&gt;&lt;li&gt;52 week low&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" vertex="1" parent="1">
-                    <mxGeometry x="520" y="160" width="220" height="220" as="geometry"/>
+                <mxCell id="10" value="&lt;ul&gt;&lt;li&gt;ticker&lt;/li&gt;&lt;li&gt;price&lt;/li&gt;&lt;li&gt;volume&lt;/li&gt;&lt;li&gt;change&lt;/li&gt;&lt;li&gt;today's open&lt;/li&gt;&lt;li&gt;previous close&lt;/li&gt;&lt;li&gt;intraday high&lt;/li&gt;&lt;li&gt;intraday low&lt;/li&gt;&lt;li&gt;52 week high&lt;/li&gt;&lt;li&gt;52 week low&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="160" width="240" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Stocks" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                    <mxGeometry x="520" y="160" width="220" height="30" as="geometry"/>
+                <mxCell id="11" value="Stocks" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="160" width="240" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="&lt;ul&gt;&lt;li&gt;has_many :stocks&lt;/li&gt;&lt;li&gt;has_one :user&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                <mxCell id="12" value="&lt;ul&gt;&lt;li&gt;has_many :stocks&lt;/li&gt;&lt;li&gt;has_one :user&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="260" y="70" width="190" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="&lt;ul&gt;&lt;li&gt;belongs_to :porfolio&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
-                    <mxGeometry x="520" y="70" width="190" height="60" as="geometry"/>
+                <mxCell id="13" value="&lt;ul&gt;&lt;li&gt;belongs_to :porfolio&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="70" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;ul&gt;&lt;li&gt;ticker&lt;/li&gt;&lt;li&gt;price&lt;/li&gt;&lt;li&gt;volume&lt;/li&gt;&lt;li&gt;change&lt;/li&gt;&lt;li&gt;today's open&lt;/li&gt;&lt;li&gt;previous close&lt;/li&gt;&lt;li&gt;intraday high&lt;/li&gt;&lt;li&gt;intraday low&lt;/li&gt;&lt;li&gt;52 week high&lt;/li&gt;&lt;li&gt;52 week low&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="550" width="260" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Watchlist" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="550" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;ul&gt;&lt;li&gt;has_many :stocks&lt;/li&gt;&lt;li&gt;belongs_to :user&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="460" width="260" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
