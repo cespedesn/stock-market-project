@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import { 
+    Form, FormGroup, Label, Input, Button
+} from 'reactstrap'
 
 
 function Login({setCurrentUser}) {
@@ -9,6 +11,8 @@ function Login({setCurrentUser}) {
     })
 
     //Login submission 
+    // This code is a function that is called when a form is submitted. It creates an object with the username and password from the form, then sends a POST request to the '/login' endpoint with the user object as the body. If the response is successful, it will parse the response as JSON and set the current user.
+
     function onSubmit(e) {
         e.preventDefault();
         const user = {
@@ -30,8 +34,49 @@ function Login({setCurrentUser}) {
             }
         })
     }
+
+
   return (
-    <div>Login</div>
+    <div>
+        <Form 
+        className='login-form'
+        onSubmit={onSubmit}
+        >
+            <FormGroup>
+                <Label
+                for="exampleEmail"
+                hidden
+                >
+                Email
+                </Label>
+                <Input
+                id="exampleEmail"
+                name="email"
+                placeholder="Email"
+                type="email"
+                />
+            </FormGroup>
+            {' '}
+            <FormGroup>
+                <Label
+                for="examplePassword"
+                hidden
+                >
+                Password
+                </Label>
+                <Input
+                id="examplePassword"
+                name="password"
+                placeholder="Password"
+                type="password"
+                />
+            </FormGroup>
+            {' '}
+            <Button>
+                Submit
+            </Button>
+        </Form>
+    </div>
   )
 }
 
