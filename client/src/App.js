@@ -1,6 +1,8 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
-import Login from './Login'
+import Login from './Login';
+import HomePage from './HomePage';
 
 
 function App() {
@@ -19,7 +21,10 @@ function App() {
   if(!currentUser) return <Login setCurrentUser={setCurrentUser} />
   return (
     <div className="App">
-      
+      <Routes>
+        <Route exact path='/' element = { <HomePage/> }/>
+        <Route path='login' element = { <Login/> }/>
+      </Routes>
     </div>
   );
 }

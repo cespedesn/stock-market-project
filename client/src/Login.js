@@ -10,16 +10,19 @@ function Login({setCurrentUser}) {
         password: ""
     })
     const [showPassword, setShowPassword] = useState(false);
-    const [passwordButton, setPasswordButton] = useState("Show Password")
+    
 
     //Login submission 
     // This code is a function that is called when a form is submitted. It creates an object with the username and password from the form, then sends a POST request to the '/login' endpoint with the user object as the body. If the response is successful, it will parse the response as JSON and set the current user.
 
     function onSubmit(e) {
         e.preventDefault();
+        const username = e.target.elements.username.value;
+        const password = e.target.elements.password.value;
         const user = {
             username,
-            password}
+            password
+        };
 
         fetch('/login', {
             method: 'POST',
@@ -47,7 +50,9 @@ function Login({setCurrentUser}) {
         setLoginForm({...loginForm, [e.target.name]: e.target.value})
     }
 
-    const togglePassword = () => {
+    
+   // This code is a function that toggles the value of the boolean variable showPassword. When the function is called, the value of showPassword will be flipped from true to false or vice versa.
+ const togglePassword = () => {
         setShowPassword(!showPassword);
     }
 
