@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { 
     Form, FormGroup, Label, Input, Button
 } from 'reactstrap'
+import Signup from './Signup';
 
 
 function Login({setCurrentUser}) {
@@ -100,6 +101,7 @@ function Login({setCurrentUser}) {
                Toggle Password
             </Button>
         </Form>
+        <Signup/>
     </div>
   )
 }
