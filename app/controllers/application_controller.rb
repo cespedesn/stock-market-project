@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::API
     include ActionController::Cookies
 
-    before_action :authorized
+    #This code is a method call that is used in the Ruby on Rails framework. It is used to call a method (in this case, "authorized") before any other action is taken. This is typically used to ensure that a user is authorized to perform a certain action.
+before_action :authorized
 
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
     rescue_from ActiveRecord::RecordInvalid, with: :render_invalid

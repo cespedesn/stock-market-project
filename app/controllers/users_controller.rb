@@ -5,6 +5,7 @@ skip_before_action :authorized, only: [:create, :show]
     # This code creates a new user using the parameters passed in the user_params method. If the user is valid, it will render a json response with the user object and a status of created. If the user is not valid, it will render a json response with the errors and a status of unprocessable_entity.
 def create
         user = User.create!(user_params)
+        byebug
         if user.valid?
             render json: user, status: :created
         else

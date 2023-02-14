@@ -7,8 +7,8 @@ import {
 function Signup() {
     const [showPassword, setShowPassword] = useState(false);
     const [loginInfo, setLoginInfo] = useState({
-        firstname: "",
-        lastname: "",
+        firstName: "",
+        lastName: "",
         username: "",
         email: "",
         password: ""
@@ -17,14 +17,14 @@ function Signup() {
     // This code is used to create a new user. It takes the user's firstname, lastname, username, email, and password and sends a POST request to the '/users' endpoint. If the request is successful, the user is navigated to the '/' page. If the request is unsuccessful, an alert is displayed with the errors.
 function onSubmit(e) {
         e.preventDefault();
-        const firstname = e.target.elements.firstname.value;
-        const lastname = e.target.elements.lastname.value;
+        const firstName = e.target.elements.firstName.value;
+        const lastName = e.target.elements.lastName.value;
         const username = e.target.elements.username.value;
         const email = e.target.elements.email.value;
         const password = e.target.elements.password.value;
         const user = {
-            firstname,
-            lastname,
+            firstName,
+            lastName,
             username,
             email,
             password
