@@ -52,7 +52,7 @@ function Login({setCurrentUser}) {
 
     
    // This code is a function that toggles the value of the boolean variable showPassword. When the function is called, the value of showPassword will be flipped from true to false or vice versa.
- const togglePassword = () => {
+    const togglePassword = () => {
         setShowPassword(!showPassword);
     }
 
